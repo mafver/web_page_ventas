@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <script src="https://kit.fontawesome.com/ad9a3eac9b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/index.css">
+
+
+    <title>Pruebas</title>
+</head>
+<body>
+    <header class="bg-header">
+        <div class="bg-navbar">
+            <div class="container text-center">
+                <div class="row mt-2 mt-sm-1">
+                    <div class="col-12 col-sm-3 mb-3 mb-sm-0">
+                        <a class="navbar-brand text-white fs-5">
+                            <img src="assets/logos/logo.svg" alt="Logo">
+                            Tienda
+                        </a>
+                    </div>
+                    <div class="col-9 ms-4 col-sm-7 ms-sm-0">
+                        <form class="d-flex" role="search">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Buscar" aria-label="Username" aria-describedby="basic-addon1">
+                                <button class="btn btn-warning input-group-text">Buscar</button>
+                              </div>
+                          </form>
+                    </div>
+
+                    <div class="col-1 me-3 me-sm-0">
+                        <a class="navbar-brand text-white ms-2">
+                            <img src="assets/logos/logo_shop.svg" alt="Logo">
+                            <span class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-danger">1</span>
+                          </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="container main">
+      <div class="row bg-dark">
+        <div class="col-6 col-sm-12">
+          <nav class="navbar navbar-expand-sm navbar-dark ">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Nosotros
+                    </a>
+                    <ul class="dropdown-menu bg-dark">
+                      <li><a class="text-white dropdown-item" href="#">Acerca de Nosotros</a></li>
+                      <li><hr class="text-white dropdown-divider"></li>
+                      <li><a class="text-white dropdown-item" href="#">Políticas de Privacidad</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Puntos de venta
+                    </a>
+                    <ul class="dropdown-menu bg-dark">
+                      <li><a class="text-white dropdown-item" href="#">Todos</a></li>
+                      <li><hr class="text-white dropdown-divider"></li>
+                      <li><a class="text-white dropdown-item" href="#">La Paz</a></li>
+                      <li><a class="text-white dropdown-item" href="#">Cochabamba</a></li>
+                      <li><a class="text-white dropdown-item" href="#">Santa Cruz</a></li>
+                      <li><a class="text-white dropdown-item" href="#">Sucre</a></li>
+                    </ul>
+                  </li>
+  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Registro
+                    </a>
+                    <ul class="dropdown-menu bg-dark">
+                      <li><a class="text-white dropdown-item" href="#">Registrarse</a></li>
+                      <li><hr class="text-white dropdown-divider"></li>
+                      <li><a class="text-white dropdown-item" href="#">Ingresar</a></li>
+                    </ul>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a class="nav-link">Contáctanos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="col-6">
+          <!-- Button for sidebar toggle -->
+          <button class="btn btn-sidebar btn-primary d-block d-sm-none mt-2" type="button" data-bs-toggle="collapsed" >
+            Ver Categorías
+          </button>
+        </div>
+      </div>
+      <div class="wrapper">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="overlay collapse">
+            <div class="h-100">
+                <div class="sidebar-logo">
+                  <a class="navbar-brand fs-5">
+                    <img src="assets/logos/logo_dark.svg" alt="Logo">
+                    Tienda
+                </a>
+                </div>
+                <!-- Sidebar Navigation -->
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">
+                        Productos y componentes.
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                          <i class="fa-solid fa-bag-shopping"></i>
+                            Productos
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages"
+                            aria-expanded="false" aria-controls="pages">
+                            <i class="fa-brands fa-servicestack"></i>
+                            Servicios
+                        </a>
+                        <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Asesoramiento técnico</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Ecommerce</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Entregas a domicilio</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard"
+                            aria-expanded="false" aria-controls="dashboard">
+                            <i class="fa-solid fa-sliders pe-2"></i>
+                            Dashboard
+                        </a>
+                        <ul id="dashboard" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Dashboard Analytics</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Dashboard Ecommerce</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#auth"
+                            aria-expanded="false" aria-controls="auth">
+                            <i class="fa-regular fa-user pe-2"></i>
+                            Registro
+                        </a>
+                        <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Ingresar</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Registrarse</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </aside>
+        <!-- Main Component -->
+        <div class="main">
+            
+            <main class="main">
+              <div class="container mt-1">
+                <div class="row d-flex justify-content-center align-items-center ">
+                    <!-- Primera tarjeta -->
+                    <div class="col-12 col-sm-6 col-md-3 mb-2">
+                        <div class="card">
+                            <img class="card-img-top" src="https://picsum.photos/id/1/400" alt="Imagen Aleatoria">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tempora ducimus, quia accusantium odio voluptas natus. Aperiam quidem itaque animi nesciunt temporibus veritatis voluptate accusantium ratione sit. Suscipit, ad possimus.</p>
+                                <a href="#" class="btn btn-primary">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Segunda tarjeta -->
+                    <div class="col-12 col-sm-6 col-md-3 mb-2">
+                      <div class="card d-flex justify-content-center">
+                          <img class="card-img-top" src="https://picsum.photos/id/12/400" alt="Imagen Aleatoria">
+                          <div class="card-body">
+                              <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tempora ducimus, quia accusantium odio voluptas natus. Aperiam quidem itaque animi nesciunt temporibus veritatis voluptate accusantium ratione sit. Suscipit, ad possimus.</p>
+                              <a href="#" class="btn btn-primary">Más información</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Tercera tarjeta -->
+                  <div class="col-12 col-sm-6 col-md-3 mb-2">
+                    <div class="card d-flex justify-content-center">
+                        <img class="card-img-top" src="https://picsum.photos/id/23/400" alt="Imagen Aleatoria">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tempora ducimus, quia accusantium odio voluptas natus. Aperiam quidem itaque animi nesciunt temporibus veritatis voluptate accusantium ratione sit. Suscipit, ad possimus.</p>
+                            <a href="#" class="btn btn-primary">Más información</a>
+                        </div>
+                    </div>
+                </div>
+                    
+        
+                </div>
+            </div>
+            </main>
+        </div>
+    </div>
+    </main>
+
+    <!-- Footer -->
+  <footer
+  class="text-center text-lg-start text-white"
+  style="background-color: #3e4551"
+  >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+    <!-- Section: Links -->
+    <section class="">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">FOOTER CONTENT</h5>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Molestiae modi cum ipsam ad, illo possimus laborum ut
+          reiciendis obcaecati. Ducimus, quas. Corrupti, pariatur eaque?
+          Reiciendis assumenda iusto sapiente inventore animi?
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-white">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-white">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-white">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-white">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 4</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+
+    <hr class="mb-4" />
+
+    <!-- Section: CTA -->
+    <section class="">
+    <p class="d-flex justify-content-center align-items-center">
+      <span class="me-3">Register for free</span>
+      <button type="button" class="btn btn-outline-light btn-rounded">
+        Sign up!
+      </button>
+    </p>
+    </section>
+    <!-- Section: CTA -->
+
+    <hr class="mb-4" />
+
+    <!-- Section: Social media -->
+    <section class="mb-4 text-center">
+      <!-- Facebook -->
+      <a
+        class="btn btn-outline-light btn-floating m-1"
+        href="#!"
+        role="button"
+        ><i class="fab fa-facebook-f"></i>
+      </a>
+
+      <!-- Twitter -->
+      <a
+        class="btn btn-outline-light btn-floating m-1"
+        href="#!"
+        role="button"
+        ><i class="fab fa-twitter"></i>
+      </a>
+
+      <!-- Google -->
+      <a
+        class="btn btn-outline-light btn-floating m-1"
+        href="#!"
+        role="button"
+        ><i class="fab fa-google"></i>
+      </a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-outline-light btn-floating m-1"
+        href="#!"
+        role="button"
+        ><i class="fab fa-instagram"></i >
+      </a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn btn-outline-light btn-floating m-1"
+        href="#!"
+        role="button"
+        ><i class="fab fa-linkedin-in"></i>
+      </a>
+
+      <!-- Github -->
+      <a
+        class="btn btn-outline-light btn-floating m-1"
+        href="#!"
+        role="button"
+        ><i class="fab fa-github"></i>
+      </a>
+    </section>
+    <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+    class="text-center p-3"
+    style="background-color: rgba(0, 0, 0, 0.2)"
+    >
+    © 2023 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/"
+    >MDBootstrap.com</a
+    >
+    </div>
+    <!-- Copyright -->
+</footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+<script src="js/index.js"></script>
+</html>
