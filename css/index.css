@@ -58,13 +58,28 @@ li {
 }
 
 #sidebar {
-    max-width: 264px;
-    min-width: 264px;
+    max-width: 16em;
+    min-width: 16em;
     margin-top:-40px;
     transition: all 0.35s ease-in-out;
     box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
     z-index: 1111;
 }
+
+/* logo */
+.img_logo {
+    width: 3em;
+    height: 3em;
+}
+
+.img_logo_sidebar {
+    width: 4.5em;
+    height: 4.5em;
+    margin-top: 0.5em;
+    margin-left: 4em;
+    margin-bottom: -0.5em;
+}
+
 
 /* Sidebar collapse */
 
@@ -153,6 +168,59 @@ a.sidebar-link {
 
     .bg-navbar {
         padding: 0.5em 0;
+    }
+    
+    
+
+}
+
+/* Imágenes de la portada */
+.img-card-inicio {
+    height: 20em;
+    width: 10em;
+    
+ 
+}
+
+
+
+/* Texto de producto */
+.texto_producto {
+    font-size: 0.75rem;
+}
+
+.span_mark {
+    background-color: beige;
+}
+
+.img_prod{
+    width: 7.5em;
+    height: 15em;
+}
+
+.img_uso_prod {
+    margin-top: 1em;
+    width: 7.5em;
+    height: 9em;
+}
+
+/* Responsive */
+@media (min-width:576px) {
+    .img_prod{
+        width: 8em;
+        height: 18em;
+    }
+}
+
+@media (min-width:992px) {
+    .img_prod{
+        width: 9em;
+        height: 20em;
+    }
+    
+    .img_uso_prod {
+        width: 10em;
+        height: 10em;
     }
     
     
